@@ -1,0 +1,16 @@
+User.objects.create(first_name = "a first name", last_name = "a last name", email = "an email", age = 1)
+
+User.objects.all()
+
+User.objects.last()
+
+User.objects.first()
+
+User.objects.order_by("-first_name")
+
+b = User.objects.get(id = 3)
+b.last_name = "Vegeta"
+b.save()
+
+b = Users.objects.get(id=4)
+b.delete()
